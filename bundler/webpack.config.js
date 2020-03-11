@@ -23,7 +23,7 @@ module.exports = {
     [
         new CopyWebpackPlugin([{from: 'static'}]),
         new MiniCssExtractPlugin(),
-        new  CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../src/index.html')
         })
@@ -48,6 +48,10 @@ module.exports = {
             {
                 test: /\.styl$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'stylus-loader']
+            },
+            {
+                test: /\.json$/,
+                use: ['json-loader']
             },
             {
                 test: /\.(jpg|jpg|gif|svg)$/,
