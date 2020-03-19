@@ -50,10 +50,6 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'stylus-loader']
             },
             {
-                test: /\.json$/,
-                use: ['json-loader']
-            },
-            {
                 test: /\.(jpg|jpg|gif|svg)$/,
                 use: 
                 [
