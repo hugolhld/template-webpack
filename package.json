@@ -25,7 +25,7 @@
   "scripts": {
     "build": "webpack --mode=production --config ./bundler/webpack.config.js",
     "dev": "webpack-dev-server --mode=development --config ./bundler/webpack.config.js",
-    "watch": "webpack --mode=dev --watch --config ./bundler/webpack.config.js"
+    "watch": "webpack --mode=development --watch --config ./bundler/webpack.config.js"
   },
   "author": "",
   "license": "ISC"
